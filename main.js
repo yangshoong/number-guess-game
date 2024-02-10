@@ -15,12 +15,19 @@ let userInput = document.getElementById("user-input");
 playButton.addEventListener("click", play);
 
 function pickRandomNum() {
-  computerNum = Math.random() * 100 + 1;
+  computerNum = Math.floor(Math.random() * 100) + 1;
   console.log("정답", computerNum);
 }
 
 function play() {
-  let userValue = userInput.Value;
+  let userValue = userInput.value;
+  if(userValue < computerNum){
+    console.log("UP!!!")
+  } else if(userValue > computerNum){
+    console.log("DOWN!!!")
+  }else {
+    console.log("Correct!!!")
+  }
   console.log(userValue);
 }
 
