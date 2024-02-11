@@ -1,19 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>숫자 맞추기 게임!</h1>
-    <div id="result-area">결과가 나온다</div>
-    <div id="chance-area">남은 찬스 : </div>
-    <input type="number" id="user-input"/>
-    <button id="play-button">Go!</button>
-    <button id="reset-button">Reset!</button>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>number guess game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .carousel-item img {
+        opacity: 0.4; /* 반투명 설정 */
+      }
+    </style>
+  </head>
 
+  
+  <body>
+    <div class="container">
+      <!-- carousel 추가한다 -->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators"></div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://miro.medium.com/v2/resize:fit:596/1*taE6PU7FLnrbcovWiWMIog.png"
+              class="d-block w-100"
+              alt="number-guess-game-image"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>
+                <div id="result-area">UP & DOWN !!</div>
+                <p></p>
+                <div id="chance-area">남은 찬스 :</div>
+                <p></p>
+                <input type="number" id="user-input" />
+                <button id="play-button">Go!</button>
+                <button id="reset-button">Reset!</button>
+              </h1>
+              <p></p>
+              <h2>1~100 사이의 숫자를 맞춰 보세요!</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
     <script src="main.js"></script>
+  
 </body>
+
 </html>
