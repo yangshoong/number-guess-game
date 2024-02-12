@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    .carousel-caption {
+        display: block;
+    }
+    .carousel-caption h1, .carousel-caption h2 {
+        font-size: smaller; /* 화면이 작을 때 글자 크기 조정 */
+    }
+    #user-input, #play-button, #reset-button {
+        width: auto; /* 입력 필드와 버튼 크기 조정 */
+        font-size: smaller; /* 버튼 내 글자 크기 조정 */
+    }
+}
